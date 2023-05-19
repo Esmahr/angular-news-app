@@ -1,27 +1,22 @@
 # NewspaperApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.1.
+Projeye göz atmadan önce bilmenizi isterim ki daha önce baştan sona bir Angular projesi geliştirmemiştim. Ayrıca, bu projede TypeScript'i ilk kez kullanıyorum ve kısa bir sürede öğrenmeye çalıştığım için teslimatımın geciktiğini belirtmek isterim. Bu proje aynı zamanda API kullanımını deneyimlediğim ilk projem oldu. Şu anda staj yaptığım yer ilk staj deneyimim ve HTML ve CSS dışında pek bir bilgim olmadığını fark ettim. Elimden geldiğince gereksinimlere uygun bir tasarım yapmaya çalıştım, ancak eksikliklerim olduğunu da kabul ediyorum. Muhtemelen bir sonraki aşamada benimle devam etmeyeceksiniz, fakat bu deneyim benim için son derece verimli oldu. Yine de öğrenmeye çok istekli olduğumu ve kendimi geliştirmek için elimden geleni yapacağımı bilmenizi isterim. Eğer bir sonraki aşamaya geçme şansım olursa, ekibinizdeki deneyimli frontend geliştiricilerin mentorluğunda kendimi daha da geliştirebileceğime inanıyorum.
 
-## Development server
+## Tamamlanan Görevler
+- Anasayfa, Hakkımda ve Kategori isimlerine özel sayfalar oluşturuldu.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Anasayfa içeriğinin en üstüne slider eklendi. Api den gelen ilk 3 haberde burada, geri kalanlarda sayfanın devamında gösteriliyor. (slider daki problemler proje eksiklikleri başlığında anlatılacaktır.)
 
-## Code scaffolding
+- Kategorilere özel api linkleri newsapiservices.service.ts dosyasına eklendi.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Header ve Navbar tamamlandı ve tüm sayfalarda var.
 
-## Build
+- Hakkımda sayfası tamamlandı.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Proje eksikleri
 
-## Running unit tests
+- apiden gelen ilk 3 haber slider da fakat sliderı çalıştırmak için yanlardakı butana çift tıklamak gerekiyo. Aslında aynı kodu başka projemde çalıştırdığımda sorunsuz çalışıyor ama burda çözemedim.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- apiden ulrToImage, description ve content değerleri null geliyor. newsapi nin web sitesine baktığımda ingilizce olan haberlerde böyle bir sorun yok sadece tr olanlarda var. ekibinize mail attiğimda bunu kendin çözmelisin dendi ama ben bi çözüm yolu bulamadım. Bu ndenle hiç bir haberin görseli yok.
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- apiden kategorilere özel haberler geliyor ama bunu slider sayfası dışındaki sayfalarda kullandığımda hata veriyor. bu nedenle kategori sayfalarında haberler yok sadece tarasımı yaptım.
